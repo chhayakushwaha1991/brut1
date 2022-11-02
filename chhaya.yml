@@ -1,0 +1,8 @@
+--- 
+-name: chhaya
+ host: all
+ task: 
+   -name :task1
+   debug:
+     msg: "my name is chhaya"
+...   
