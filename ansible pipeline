@@ -1,0 +1,16 @@
+pipeline {
+    agent any
+    stages {
+        stage ("SCM checkout") {
+            steps {
+                git "https://github.com/chhayakushwaha1991/brut1.git"
+                
+            }
+        }
+        stage(" execute Ansible") {
+           steps {
+                ansiblePlaybook credentialsId: 'private-key', disableHostKeyChecking: true, installation: 'ansible', inventory: '/root/brut1/hosts', playbook: 'variable.yml'
+            }    
+        }    
+    }
+}
