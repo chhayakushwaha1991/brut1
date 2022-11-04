@@ -1,0 +1,10 @@
+node {
+    def mvnHome
+    stage('Build') {
+        ansiblePlaybook(
+            inventory: '/root/brut1/hosts'
+            installation: 'ansible'
+            playbook: /root/brut1/variable.yml
+            )  
+    }
+}
