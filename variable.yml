@@ -1,13 +1,15 @@
 ---
  - name: my playbook
-  hosts: all
-  tasks: 
+   hosts: all
+   tasks:
    - name: mytask1
      debug:
          msg: "my name is chhaya"
 
    - name: mytask2
-     debug: 
-         msg: "i am from nagpur" 
-...    
+     debug:
+         msg: "i am from nagpur"
+...
+
+ 
 
