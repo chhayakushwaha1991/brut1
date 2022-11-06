@@ -2,8 +2,8 @@
 - name: chhaya
   host: all
   tasks: 
-   -name:  task1
-    debug:
-     msg: "my name is chhaya"
+   - name:  task1
+     debug:
+       msg: "my name is chhaya"
 ...   
 
