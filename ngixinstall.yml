@@ -3,7 +3,7 @@
   become: yes
   vars:
     server_name: "{{ ansible_default_ipv4.address }}"
-    document_root: /var/www
+    document_root: /usr/share/nginx/html
     app_root: pet-shop-website-template
 
   tasks:
